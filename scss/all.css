@@ -1,0 +1,819 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Codes Start from Here */
+/*  This set up is mostly for mobile, 
+ *  but also supports desktop views. 
+*/
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  /* (content) 1110px + 15*2 = */
+  max-width: 1140px;
+  /* Spaces on each side */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo {
+  padding: 9px;
+}
+
+.header .logo img {
+  width: 128px;
+  height: 38px;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .menu em {
+  display: none;
+}
+
+.header .menu a {
+  display: block;
+  padding: 16px;
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+.header .menu a .material-icons {
+  vertical-align: -3px;
+}
+
+.header .menu .mobileMenu {
+  display: none;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.banner .bannerImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 870px;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.banner .bannerIntro {
+  color: white;
+  position: absolute;
+  right: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner .bannerIntro h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.banner .bannerIntro p {
+  font-size: 24px;
+  max-width: 445px;
+  line-height: 1.5;
+}
+
+.banner .bannerIntro .button {
+  background-color: transparent;
+  color: white;
+  width: 350px;
+  height: 60px;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  margin: 16px 16px 16px 0px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+}
+
+.banner .bannerIntro .button:hover {
+  color: white;
+  background-color: #e6e6e6;
+  opacity: 0.6;
+}
+
+.topProduct .topProduct-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.topProduct .topProduct-row img {
+  width: 555px;
+  height: 555px;
+}
+
+.topProduct .topProduct-rowReverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.topProduct .topProduct-content {
+  margin: 0 auto;
+  width: 335px;
+  line-height: 1.5;
+}
+
+.topProduct .topProduct-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.topProduct .topProduct-content p {
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+
+.topProduct .topProduct-content span {
+  font-size: 16px;
+  color: #ac8a46;
+}
+
+.topProduct .Last img {
+  height: 1080px;
+  margin-bottom: 60px;
+}
+
+.topProduct .Last h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.topProduct .Last p {
+  font-size: 16px;
+  padding-bottom: 52px;
+}
+
+.topProduct .Last .button {
+  margin-top: 8px;
+  background-color: transparent;
+  color: black;
+  width: 350px;
+  height: 60px;
+  padding: 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.topProduct .Last .button:hover {
+  background-color: #e6e6e6;
+  opacity: 0.95;
+}
+
+.productLists {
+  background: #e0e0e0;
+  padding-bottom: 40px;
+}
+
+.productLists .productLists_Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.productLists .productLists_Content img {
+  width: 350px;
+  height: 540px;
+  padding-top: 40px;
+}
+
+.productLists .productLists_Content h4 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.productLists .productLists_Content p {
+  line-height: 2;
+  padding-bottom: 16px;
+}
+
+.productLists .productLists_Content p,
+.productLists .productLists_Content span {
+  font-size: 16px;
+}
+
+.productLists .productLists_Content .crossOut {
+  padding-left: 8px;
+  color: #8d8d8d;
+  text-decoration: line-through;
+}
+
+.productLists .productLists_Content li.mask {
+  position: relative;
+}
+
+.productLists .productLists_Content li.mask .maskBox {
+  width: 350px;
+  height: 500px;
+  padding-top: 40px;
+  position: absolute;
+  top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  opacity: 30%;
+  z-index: 11;
+}
+
+.productLists .productLists_Content li.mask .maskBox p {
+  color: white;
+  font-size: 24px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+  line-height: 1.5;
+}
+
+.card .card_img {
+  width: 730px;
+  height: 520px;
+}
+
+.card .card_text {
+  width: 350px;
+  padding-left: 30px;
+}
+
+.card .card_text h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card .card_text h5 {
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+
+.card .card_text p {
+  padding-bottom: 16px;
+  font-size: 16px;
+}
+
+.card .card_text span {
+  font-size: 16px;
+  color: #ac8a46;
+}
+
+.subscribe {
+  color: #8d8d8d;
+  font-size: 32px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.subscribe img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 600px;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.subscribe .subIntro {
+  position: absolute;
+  left: 11%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.subscribe .subIntro input {
+  border: 2px solid #916000;
+  width: 219px;
+  height: 60px;
+  border-radius: 4px 0px 0px 4px;
+  text-align: center;
+  font-size: 16px;
+  color: #8d8d8d;
+  margin-right: -10px;
+  border-right: none;
+  margin-top: 20px;
+}
+
+.subscribe .subIntro .button {
+  width: 131px;
+  height: 60px;
+  color: white;
+  background-color: #916000;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.subscribe .subIntro .button:hover {
+  background-color: #6c4700;
+}
+
+.footer {
+  background: #916000;
+  height: 80px;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .rightAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .container .rightAlign li h1 a img {
+  display: block;
+  padding: 20px 20px 20px 10px;
+}
+
+.footer .container .rightAlign li span {
+  display: block;
+  font-size: 14px;
+  padding-top: 10px;
+  color: white;
+}
+
+.footer .container .leftAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .container .leftAlign li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 28px 18px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .header .menu span {
+    display: none;
+  }
+  .header .menu em {
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    background: #916000;
+    color: white;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    font-size: 9px;
+  }
+  .header .menu .m-none {
+    display: none;
+  }
+  .header .menu .mobileMenu {
+    display: block;
+  }
+  .banner .bannerIntro {
+    max-width: 345px;
+    right: 0%;
+  }
+  .banner .bannerIntro h1 {
+    font-size: 28px;
+    padding-top: 10px;
+  }
+  .banner .bannerIntro p {
+    font-size: 16px;
+    max-width: 345px;
+  }
+  .banner .bannerIntro .button {
+    font-size: 20px;
+    width: 320px;
+  }
+  .topProduct .topProduct-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 26%;
+    margin-bottom: 32px;
+  }
+  .topProduct .topProduct-row .topProduct-img .productImg {
+    width: 345px;
+    height: 345px;
+  }
+  .topProduct .topProduct-row .topProduct-img img {
+    width: 345px;
+    height: 680px;
+  }
+  .topProduct .topProduct-row .Last .button {
+    width: 335px;
+  }
+  .productLists .productLists_Content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .card_text {
+    width: 345px;
+    padding-left: 0px;
+  }
+  .subscribe {
+    margin-top: 40px;
+  }
+  .subscribe .subIntro {
+    left: 3%;
+  }
+  .subscribe .subIntro .subscribeMail {
+    width: 65%;
+  }
+  .subscribe .subIntro .button {
+    width: 35%;
+  }
+  .footer .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .container .leftAlign {
+    display: none;
+  }
+}
+
+.brandNav {
+  background-color: #916000;
+  height: 52px;
+}
+
+.brandNav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 11.5%;
+}
+
+.brandNav .list li {
+  color: white;
+  font-size: 20px;
+  padding: 14px;
+}
+
+.contentForm {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.contentForm .formImg img {
+  max-width: 730px;
+  height: 730px;
+}
+
+.contentForm .loginForm {
+  display: block;
+  width: 350px;
+  margin-left: 30px;
+  margin: 0 auto;
+}
+
+.contentForm .loginForm h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.contentForm .loginForm label {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.contentForm .loginForm input {
+  margin-bottom: 30px;
+  width: 350px;
+  height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  color: #818a91;
+  padding-left: 12px;
+}
+
+.contentForm .loginForm a {
+  color: #916000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contentForm .loginForm button {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  left: 42%;
+}
+
+.contentForm .loginForm .register {
+  color: #916000;
+  background-color: white;
+  border: 1px solid #91600a;
+}
+
+.contentForm .loginForm .register:hover {
+  color: white;
+  background-color: #916000;
+}
+
+.contentForm .loginForm .login {
+  color: white;
+  background-color: #916000;
+  border-color: #916000;
+  border: none;
+}
+
+.contentForm .loginForm .login:hover {
+  color: white;
+  background-color: #6c4700;
+}
+
+@media (max-width: 768px) {
+  .brandNav {
+    display: none;
+  }
+  .contentForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  .contentForm .formImg img {
+    max-width: 345px;
+    height: auto;
+  }
+  .contentForm .loginForm {
+    margin-top: 28px;
+  }
+}
+/*# sourceMappingURL=all.css.map */
